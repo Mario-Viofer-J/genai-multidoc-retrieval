@@ -84,13 +84,13 @@ agent_worker = FunctionCallingAgentWorker.from_tools(
 
 agent = AgentRunner(agent_worker)
 response = agent.query(
-    "Tell me about the evaluation dataset used in LongLoRA, "
-    "and then tell me about the evaluation results"
+    "Tell me about the self-rag training used in selfrag, "
+    "and then tell me about the self-rag inference"
 )
 ```
 
 ## OUTPUT:
-![alt text](Output.png)
+![alt text](img.png)
 
 ## RESULT:
 Prompt Handling: The program constructs a query dynamically and feeds it into the LlamaIndex.
